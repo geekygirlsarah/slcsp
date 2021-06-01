@@ -1,6 +1,6 @@
 import unittest
 
-from Zips import Single_Zip, Zips
+from Zips import Zips
 
 
 class TestZips(unittest.TestCase):
@@ -11,7 +11,7 @@ class TestZips(unittest.TestCase):
         county_code = "54321"
         name = "County"
         rate_area = 123
-        s = Single_Zip(zipcode, state, county_code, name, rate_area)
+        s = Zips.Single_Zip(zipcode, state, county_code, name, rate_area)
 
         self.assertEquals(s.zipcode, zipcode)
         self.assertEquals(s.state, state)

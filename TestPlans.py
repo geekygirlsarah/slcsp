@@ -1,5 +1,5 @@
 import unittest
-from Plans import Single_Plan, Plans
+from Plans import Plans
 
 
 class TestPlans(unittest.TestCase):
@@ -10,7 +10,7 @@ class TestPlans(unittest.TestCase):
         metal_level = "Brass"
         rate = 123.45
         rate_area = 123
-        p = Single_Plan(plan_id, state, metal_level, rate, rate_area)
+        p = Plans.Single_Plan(plan_id, state, metal_level, rate, rate_area)
 
         self.assertEquals(p.plan_id, plan_id)
         self.assertEquals(p.state, state)

@@ -20,11 +20,11 @@ class TestZips(unittest.TestCase):
         s = Zips.Single_Zip(zipcode, state, county_code, name, rate_area)
 
         # Assert the expected data is in the object
-        self.assertEquals(s.zipcode, zipcode)
-        self.assertEquals(s.state, state)
-        self.assertEquals(s.county_code, county_code)
-        self.assertEquals(s.name, name)
-        self.assertEquals(s.rate_area, rate_area)
+        self.assertEqual(s.zipcode, zipcode)
+        self.assertEqual(s.state, state)
+        self.assertEqual(s.county_code, county_code)
+        self.assertEqual(s.name, name)
+        self.assertEqual(s.rate_area, rate_area)
 
     def test_add(self):
         zipcode = 12345
@@ -41,11 +41,11 @@ class TestZips(unittest.TestCase):
         added_zipcode = z.zips[zipcode]
 
         # Assert all data in object matches what was added
-        self.assertEquals(added_zipcode.zipcode, zipcode)
-        self.assertEquals(added_zipcode.state, state)
-        self.assertEquals(added_zipcode.county_code, county_code)
-        self.assertEquals(added_zipcode.name, name)
-        self.assertEquals(added_zipcode.rate_area, rate_area)
+        self.assertEqual(added_zipcode.zipcode, zipcode)
+        self.assertEqual(added_zipcode.state, state)
+        self.assertEqual(added_zipcode.county_code, county_code)
+        self.assertEqual(added_zipcode.name, name)
+        self.assertEqual(added_zipcode.rate_area, rate_area)
 
     def test_get_state_and_rate_area(self):
         zipcode = 12345
@@ -65,7 +65,7 @@ class TestZips(unittest.TestCase):
         result_state, result_rate_area = z.get_state_and_rate_area(zipcode)
 
         self.assertEqual(result_state, state)
-        self.assertEquals(result_rate_area, rate_area)
+        self.assertEqual(result_rate_area, rate_area)
 
     def test_check_invalid_zipcode(self):
         zipcode = 12345

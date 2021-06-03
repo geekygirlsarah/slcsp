@@ -2,6 +2,57 @@
 
 ## Calculate the second lowest cost silver plan
 
+## What's included in this repo?
+
+* Files needed to run this (main.py, SilverPlans.py, Zips.py)
+* Files needed to test this (TestZips.py, TestSilverPlans.py)
+* Data files (slcsp.csv, zips.csv, plans.csv)
+
+## How to run the program
+
+Assuming Python is properly installed, run this command to output the results to stdout/console:
+
+`python main.py`
+
+To output the results to a file (for example, results.csv), run this command:
+
+`python main.py > results.csv`
+
+## How to run the tests
+
+The unit tests are built with `unittest`, the built-in Python unit testing system. You can run them with:
+
+`python -m unittest`
+
+You can run specific unit test modules with additional info (verbose) by adding the `-v`:
+
+`python -m unittest -v`
+
+You can also run a specific unit test module with the following command(s):
+
+`python -m unittest TestZips`
+`python -m unittest TestSilverPlans`
+
+## Development Environment
+
+I wrote this using JetBrain's PyCharm IDE. Using its Run and Debug commands, it will find the correct starting place to run the code (main.py, then the main() launcher at the bottom).
+
+If you open any of the testing files in PyCharm, it will allow you to easily run those from within the IDE by clicking the green arrow next to the tests.
+
+I also tested this in Visual Studio Code. With Microsoft's Python extension installed, the "Start Debugging" and "Start Without Debugging" commands will properly launch it the correct way. Open up main.py, then run/debug it and choose "Python File" from the 
+
+To run the tests, you need to start running/debugging it, but instead of running the Python file, choose "Module" instead. Type in `unittest` and it should run all the tests. You can also press Ctrl+Shift+P, type "Python run test" and configure the environment to run tests (which is a bit more complicated). You can also run the commands mentioned above in the terminal, which is about the easiest way. 
+
+## Questions?
+
+Reach out! I'm easily reachable by Twitter at [@geekygirlsarah](https://twitter.com/geekygirlsarah). If you have my email, you're welcome to reach out there (but not listed here to prevent spam).
+
+## Original problem
+
+See below for the original problem as provided at https://homework.adhoc.team/slcsp/.
+
+---
+
 ## Problem
 
 You've been asked to determine the second lowest cost silver plan (SLCSP) for
